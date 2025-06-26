@@ -1,0 +1,1 @@
+exqudens-cpp-bitcoin-miner: 0.0.1
