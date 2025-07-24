@@ -24,7 +24,7 @@ if("${CMAKE_UTIL_FILE}" STREQUAL "")
                     COMMAND_ERROR_IS_FATAL "ANY"
                 )]]
                 execute_process(
-                    COMMAND "${CONAN_COMMAND}" "install" "--tool-requires=exqudens-cmake/2.0.1" "--deployer" "direct_deploy" "--deployer-folder" "${CMAKE_SOURCE_DIR}/build/dependencies"
+                    COMMAND "${CONAN_COMMAND}" "install" "--tool-requires=exqudens-cmake/0.0.1" "--deployer" "direct_deploy" "--deployer-folder" "${CMAKE_SOURCE_DIR}/build/dependencies"
                     COMMAND_ECHO "STDERR"
                     ENCODING "UTF-8"
                     COMMAND_ERROR_IS_FATAL "ANY"
@@ -59,7 +59,7 @@ if("msvc-x64-x64" IN_LIST "PRESET_NAME_ELEMENTS")
         set_msvc_toolchain(TOOLCHAIN_CONTENT
             PROCESSOR "x86_64"
             OS "${CMAKE_HOST_SYSTEM_NAME}"
-            VERSION "16"
+            VERSION "17"
             HOST "x64"
             TARGET "x64"
             OUTPUT_FILE "${CMAKE_CURRENT_SOURCE_DIR}/build/msvc-x64-x64-toolchain.cmake"
